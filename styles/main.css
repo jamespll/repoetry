@@ -100,6 +100,12 @@ footer .footer-row {
 		font-family: serif;
 		box-shadow: 0px -5px 20px black;
 	}
+
+	footer .footer-row {
+		margin-left: auto;
+		width: 80%;
+		margin-right: 2em;
+	}
 }
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
