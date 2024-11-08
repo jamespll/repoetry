@@ -20,12 +20,12 @@ body {
 	margin: 0;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 480px) {
 	* {
 		font-size: 16px;
 	}
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 	* {
 		font-size: 12px;
 	}
@@ -93,27 +93,58 @@ footer .footer-row {
 	padding-top: 1px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
 	.text-container {
-		background-color: white;
-		background-color: rgba(255,255,255, 0.85);
 		width: 60%;
 		margin: 5% auto;
 		font-family: serif;
-		color: black;
-		padding: 1em;
 		box-shadow: 0px -5px 20px black;
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 480px) and (max-width: 800px) {
 	.text-container {
-		background-color: rgba(255,255,255, 0.85);
+		width: 80%;
+		margin: 7em auto 5% auto;
+		font-family: serif;
+		box-shadow: 0px -5px 20px black;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.text-container {
 		width: 94%;
 		margin: 7em auto 5% auto;
 		font-family: serif;
-		color: black;
-		padding: 1em;
 		box-shadow: 0px -5px 20px black;
 	}
+}
+
+.text-container {
+	background-color: rgba(255,255,255, 0.85);
+	color: black;
+	padding: 1em;
+	line-height: 1.8em;
+}
+
+.text-container p:not(.textblock){
+	padding-left: 3em;
+}
+
+.text-container span {
+	margin-left: -2em;
+}
+
+.text-container p {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.textblock {
+	padding-left: 1em;
+}
+
+span::after {
+	content: "\000A";
+  white-space: pre;
 }
