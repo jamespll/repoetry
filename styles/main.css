@@ -86,7 +86,6 @@ footer .footer-row {
 }
 
 #page-wrapper {
-	background-image: url("../img/background.jpg");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	min-height: 20em;
@@ -96,7 +95,7 @@ footer .footer-row {
 @media screen and (min-width: 800px) {
 	.text-container {
 		width: 60%;
-		margin: 5% auto;
+		margin: 10em auto 2em auto;
 		font-family: serif;
 		box-shadow: 0px -5px 20px black;
 	}
@@ -127,6 +126,8 @@ footer .footer-row {
 }
 
 .text-container {
+	position: relative;
+	z-index: 100;
 	background-color: rgba(255,255,255, 0.85);
 	color: black;
 	padding: 1em;
@@ -153,4 +154,19 @@ footer .footer-row {
 span::after {
 	content: "\000A";
   white-space: pre;
+}
+
+.bgpicture {
+	width: 100vw;
+	position: absolute;
+	z-index: 1;
+}
+
+.credits {
+	text-align: center;
+}
+
+.credits a {
+	color: white;
+	text-decoration: none;
 }
